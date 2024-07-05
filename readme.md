@@ -14,7 +14,8 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 - Bio Changer
 - URL Changer
 - Client Checker
-- Scraper
+- Follower Scraper
+- Post Likes Scraper
 
 ## Future:
 
