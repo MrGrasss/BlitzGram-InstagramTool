@@ -13,6 +13,7 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 - Display Name Changer
 - Bio Changer
 - URL Changer
+- Client Checker
 - Scraper
 
 ## Future:
