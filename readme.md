@@ -1,4 +1,4 @@
-![Screenshot_1](https://github.com/MrGrasss/BlitzGram-InstagramTool/assets/132838549/a057b3dd-e4a5-4227-a243-47d3625f7d3f)
+![Screenshot_1](https://github.com/MrGrasss/BlitzGram-InstagramTool/assets/132838549/b7d0ab2f-0131-4cc1-9e0a-3a183673af8d)
 
 # BlitzGram
 
@@ -13,13 +13,11 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 - Display Name Changer
 - Bio Changer
 - URL Changer
-- Client Checker
-- Follower Scraper
-- Post Likes Scraper
+- Scraper
+- Account Generator
 
 ## Future:
 
-- Account Generator
 - Any feature can and will be added on demand
 
 # Extra Functionality Info
@@ -52,6 +50,12 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 
 - **Threading:**
   - All functions are threaded except for logging in through `accounts.txt`, meaning that logging in through sessions is threaded.
+
+## Account Generator
+
+- **Overview:** Generate new Instagram accounts using HQ un-flagged proxies.
+- **Saved Accounts:** Generated accounts are saved into `gen/accounts.txt`.
+- **Email Usage:** Currently, free emails are used for account generation. HQ mails and numbers will be added later.
 
 ## Account Functionalities
 
@@ -100,4 +104,3 @@ I'm open to any suggestions or feedback!
 For questions, you can always contact me on [Telegram](https://t.me/MrGrassss).
 
 https://github.com/MrGrasss/BlitzGram-InstagramTool/assets/132838549/2ce6caee-f623-4022-a83b-106a76b50e41
-
