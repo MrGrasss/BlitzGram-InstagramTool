@@ -55,7 +55,8 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 
 - **Overview:** Generate new Instagram accounts using HQ un-flagged proxies.
 - **Saved Accounts:** Generated accounts are saved into `gen/accounts.txt`.
-- **Email Usage:** Currently, free emails are used for account generation. HQ mails and numbers will be added later.
+- **Saved Sessions:** Generated sessions are saved into `gen/sessions.txt`.
+- **Email Usage:** Currently, free emails are used for account generation. HQ mails and numbers will be added later
 
 ## Account Functionalities
 
