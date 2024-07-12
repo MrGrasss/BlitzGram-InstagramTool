@@ -1,4 +1,4 @@
-![Screenshot_1](https://github.com/MrGrasss/BlitzGram-InstagramTool/assets/132838549/b7d0ab2f-0131-4cc1-9e0a-3a183673af8d)
+![Screenshot_1](https://github.com/user-attachments/assets/3744aa19-c0e7-43a9-b8e5-187cbf9321d2)
 
 # BlitzGram
 
@@ -25,38 +25,44 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 ## Login & Setup
 
 - **Accounts Format:** Supports multiple formats:
-  - `username:pass:email:pass`
-  - `username:pass`
-  - `email:pass`
-  - `phone:pass`
-  
+    - `username:pass:email:pass`
+    - `username:pass`
+    - `email:pass`
+    - `phone:pass`
+
 - **Sessions Format:** Use `acc_id:session` format.
 
 - **Proxies:** Supports sticky/rotating proxies in the following formats:
-  - `HOST:PORT@USERNAME:PASSWORD`
-  - `HOST:PORT:USERNAME:PASSWORD`
-  - `HOST:PORT`
+    - `HOST:PORT@USERNAME:PASSWORD`
+    - `HOST:PORT:USERNAME:PASSWORD`
+    - `HOST:PORT`
 
 - **Accounts:** Accounts from `accounts.txt` are logged in and saved to `sessions.txt`, ensuring no duplicates.
 
 - **2FA:** Two-factor authentication is supported.
 
 - **Files:**
-  - `client_info/profile_pics`: Store profile pictures here.
-  - `client_info/usernames.txt`: List of usernames.
-  - `client_info/names.txt`: List of display names.
-  - `client_info/bios.txt`: List of bios.
-  - `client_info/site_urls.txt`: List of URLs to be used. URLs should have a correct schema, e.g., `https://github.com/`.
+    - `client_info/profile_pics`: Store profile pictures here.
+    - `client_info/usernames.txt`: List of usernames.
+    - `client_info/names.txt`: List of display names.
+    - `client_info/bios.txt`: List of bios.
+    - `client_info/site_urls.txt`: List of URLs to be used. URLs should have a correct schema,
+      e.g., `https://github.com/`.
 
 - **Threading:**
-  - All functions are threaded except for logging in through `accounts.txt`, meaning that logging in through sessions is threaded.
+    - All functions are threaded except for logging in through `accounts.txt`, meaning that logging in through sessions
+      is threaded.
 
 ## Account Generator
 
 - **Overview:** Generate new Instagram accounts using HQ un-flagged proxies.
 - **Saved Accounts:** Generated accounts are saved into `gen/accounts.txt`.
 - **Saved Sessions:** Generated sessions are saved into `gen/sessions.txt`.
-- **Email Usage:** Currently, free emails are used for account generation. HQ mails and numbers will be added later
+- **Email Usage:** Currently, free emails are used for account generation. HQ mails and numbers will be added later.
+- **Proxies:** Sticky residential proxies are needed and one thread equals one proxy. Entering more threads than
+  available proxies will always cap the threads.
+- **Config:** You will find "run_forever" in `gen/config.json`. This will loop threads with the same proxies. Make sure
+  that you set your sticky proxies to reset after 1/2 minutes. This option is either "true" or "false"
 
 ## Account Functionalities
 
@@ -74,19 +80,22 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 ### Scraper Configuration:
 
 - **Limit Per Account:** Set in `scraper/config.json`. Use `0` for unlimited.
-- **Posts Format:** Use the full URL, e.g., `https://www.instagram.com/p/Cq4gcQGKwVX`, or just the post ID, e.g., `Cq4gcQGKwVX`.
+- **Posts Format:** Use the full URL, e.g., `https://www.instagram.com/p/Cq4gcQGKwVX`, or just the post ID,
+  e.g., `Cq4gcQGKwVX`.
 
 ## Mass DM
 
 - **Overview:** Automate sending direct messages to users scraped by the scraper feature. scraper/user_info.json.
-- **Message Configuration:** Set up in `mass_dm/config.json` and `mass_dm/message.txt`.
+- **Message Configuration:** Set up in `mass_dm/config.json` and `mass_dm/message.txt`. Emojis can be added like this ❤️
 - **Attachments:** Store images and videos in `mass_dm/images` and `mass_dm/videos`.
 
 ### Mass DM Configuration:
 
-- **Timing:** Configure `seconds_before_dm` and `dm_limit_per_acc` in `mass_dm/config.json`. Instagram's daily DM limit is 100.
+- **Timing:** Configure `seconds_before_dm` and `dm_limit_per_acc` in `mass_dm/config.json`. Instagram's daily DM limit
+  is 100.
 - **Attachments Usage:** Set `use_images` and `use_video` to `true` to send random images or videos with messages.
-- **Results:** Successful messages are saved to `mass_dm/success.txt`, and failed ones to `mass_dm/failed.txt`. Duplicates are skipped on rerun.
+- **Results:** Successful messages are saved to `mass_dm/success.txt`, and failed ones to `mass_dm/failed.txt`.
+  Duplicates are skipped on rerun.
 
 ## Client Checker
 
