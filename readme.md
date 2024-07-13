@@ -1,4 +1,4 @@
-![Screenshot_1](https://github.com/user-attachments/assets/3744aa19-c0e7-43a9-b8e5-187cbf9321d2)
+![Screenshot_1](https://github.com/user-attachments/assets/292f8000-8a8f-4b67-b0ca-0fa99cd635d6)
 
 # BlitzGram
 
@@ -58,11 +58,13 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 - **Overview:** Generate new Instagram accounts using HQ un-flagged proxies.
 - **Saved Accounts:** Generated accounts are saved into `gen/accounts.txt`.
 - **Saved Sessions:** Generated sessions are saved into `gen/sessions.txt`.
-- **Email Usage:** Currently, free emails are used for account generation. HQ mails and numbers will be added later.
+- **Email Usage:** Either use tempmail or kopeechka by setting "use_temp_mail" to "false" and inputting your "
+  kopeechka_token"
 - **Proxies:** Sticky residential proxies are needed and one thread equals one proxy. Entering more threads than
   available proxies will always cap the threads.
 - **Config:** You will find "run_forever" in `gen/config.json`. This will loop threads with the same proxies. Make sure
-  that you set your sticky proxies to reset after 1/2 minutes. This option is either "true" or "false"
+  that you set your sticky proxies to by using "proxy_reset_delay" (seconds) in `gen/config.json` if "run_forever" is
+  set to "true". You will also find the option "use_temp_mail" and "kopeechka_token" to enable kopeechka.
 
 ## Account Functionalities
 
@@ -85,17 +87,22 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 
 ## Mass DM
 
-- **Overview:** Automate sending direct messages to users scraped by the scraper feature. scraper/user_info.json.
+- **Overview:** Automate sending direct messages to users scraped by the scraper feature. `scraper/user_info.json`.
 - **Message Configuration:** Set up in `mass_dm/config.json` and `mass_dm/message.txt`. Emojis can be added like this ❤️
 - **Attachments:** Store images and videos in `mass_dm/images` and `mass_dm/videos`.
+- **Usernames.txt** Instead of the scraped users in `scraper/user_info.json` add usernames to `mass_dm/usernames.txt` 
+  or user_ids to `mass_dm/user_ids.txt` that will be messaged when "use_scraped_users" is set to "false" in 
+  `mass_dm/config.json`
+  
 
 ### Mass DM Configuration:
 
 - **Timing:** Configure `seconds_before_dm` and `dm_limit_per_acc` in `mass_dm/config.json`. Instagram's daily DM limit
   is 100.
 - **Attachments Usage:** Set `use_images` and `use_video` to `true` to send random images or videos with messages.
-- **Results:** Successful messages are saved to `mass_dm/success.txt`, and failed ones to `mass_dm/failed.txt`.
-  Duplicates are skipped on rerun.
+- **Results:** Successful messages are saved to `mass_dm/processed(user_ids/usernames)/success.txt`, and failed ones 
+  to `mass_dm/processed(user_ids/usernames)/failed.txt`. Duplicates are skipped on rerun.
+  
 
 ## Client Checker
 
