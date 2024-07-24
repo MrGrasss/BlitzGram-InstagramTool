@@ -1,4 +1,4 @@
-![Screenshot_1](https://github.com/user-attachments/assets/292f8000-8a8f-4b67-b0ca-0fa99cd635d6)
+![Screenshot_1](https://github.com/user-attachments/assets/a8f25e13-8f48-4293-8171-e97640579cf5)
 
 # BlitzGram
 
@@ -52,6 +52,10 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 - **Threading:**
     - All functions are threaded except for logging in through `accounts.txt`, meaning that logging in through sessions
       is threaded.
+    -
+- **Caution**
+    - WHen logging into a session keep that account in accounts.txt incase you need to relogin (refresh the session) the
+      tool can do so
 
 ## Account Generator
 
@@ -90,19 +94,17 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 - **Overview:** Automate sending direct messages to users scraped by the scraper feature. `scraper/user_info.json`.
 - **Message Configuration:** Set up in `mass_dm/config.json` and `mass_dm/message.txt`. Emojis can be added like this ❤️
 - **Attachments:** Store images and videos in `mass_dm/images` and `mass_dm/videos`.
-- **Usernames.txt** Instead of the scraped users in `scraper/user_info.json` add usernames to `mass_dm/usernames.txt` 
-  or user_ids to `mass_dm/user_ids.txt` that will be messaged when "use_scraped_users" is set to "false" in 
+- **Usernames.txt** Instead of the scraped users in `scraper/user_info.json` add usernames to `mass_dm/usernames.txt`
+  or user_ids to `mass_dm/user_ids.txt` that will be messaged when "use_scraped_users" is set to "false" in
   `mass_dm/config.json`
-  
 
 ### Mass DM Configuration:
 
 - **Timing:** Configure `seconds_before_dm` and `dm_limit_per_acc` in `mass_dm/config.json`. Instagram's daily DM limit
   is 100.
 - **Attachments Usage:** Set `use_images` and `use_video` to `true` to send random images or videos with messages.
-- **Results:** Successful messages are saved to `mass_dm/processed(user_ids/usernames)/success.txt`, and failed ones 
+- **Results:** Successful messages are saved to `mass_dm/processed(user_ids/usernames)/success.txt`, and failed ones
   to `mass_dm/processed(user_ids/usernames)/failed.txt`. Duplicates are skipped on rerun.
-  
 
 ## Client Checker
 
