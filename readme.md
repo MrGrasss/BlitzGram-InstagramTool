@@ -18,6 +18,7 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 - Scraper (Full info included)
 - Account Generator
 - Client Checker
+- Equal Follower
 
 ## Future:
 
@@ -153,6 +154,34 @@ IDs.
 
 - **Flagged Accounts:** Flagged accounts are removed and saved to `flagged_accounts.txt`.
 - **Bad Sessions:** Bad sessions are saved to `bad_sessions.txt`.
+
+## Equal Follower
+
+**Description:**
+
+The Equal Follower feature allows you to distribute a list of usernames across multiple Instagram accounts,
+ensuring that each account follows a unique set of users without any overlap.
+
+**How It Works:**
+
+1. **Upload Usernames:**
+    - Fill `equal_follower/usernames.txt` with the usernames you want to follow. (1 per line)
+   
+2. **Setup Config:**
+    - Fill `equal_follower/config.json` with the min and max seconds before follow.
+
+3. **Set Parameters:**
+    - Specify the number of clients (Instagram accounts) to use.
+    - Define the number of usernames each client should follow.
+
+4. **Distribute Follows:**
+    - The Equal Follower will allocate usernames to each account sequentially, ensuring no duplicates.
+
+**Usage Example:**
+
+- You have a `usernames.txt` file of 500 usernames.
+- You want to use 10 accounts, each following 50 users.
+- Equal Follower will ensure each of the 10 accounts follows a unique set of 50 users.
 
 ## Suggestions / Feedback
 
