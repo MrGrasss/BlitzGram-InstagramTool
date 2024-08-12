@@ -16,7 +16,6 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 - Bio Changer
 - URL Changer
 - Scraper (Full info included)
-- Account Generator
 - Client Checker
 - Equal Follower
 - Mass Post Commenter
@@ -30,6 +29,7 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 ## Future:
 
 - Any feature can and will be added on demand
+- Account Generator separate from this tool. 
 
 # Extra Functionality Info
 
@@ -89,39 +89,6 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 
 - **Posts Format:** Use the full URL, e.g., `https://www.instagram.com/p/Cq4gcQGKwVX`, or just the post ID,
   e.g., `Cq4gcQGKwVX`.
-
-## Account Generator
-
-### Overview:
-
-Generate new Instagram accounts using HQ un-flagged proxies.
-
-### Prerequisites:
-
-1. **Proxies:** Sticky residential proxies are needed and one thread equals one proxy. Entering more threads than
-   available proxies will always cap the threads. Your proxies TTL should be the same as proxy_reset_delay.
-2. **Email Configuration:** Set "use_temp_mail" to "false" and input your `kopeechka_token` to use Kopeechka for
-   email services or "true" to use temp mail
-
-### Setup:
-
-1. **Configurations:** Configure `gen/config.json`:
-    - `"run_forever"`: Set this to loop threads with the same proxies.
-    - `"proxy_reset_delay"`: Set delay in seconds to reset proxies if "run_forever" is set to "true". (TTL)
-    - `"use_temp_mail"`: Enable or disable using temporary email services.
-    - `"kopeechka_token"`: Input your Kopeechka token to enable Kopeechka.
-    - `"save_previous_kopeechka_email"`: Enable to reuse the email after a failed attempt to minimize losses.
-
-### How to Use:
-
-1. **Run the Account Generator:** Launch the feature from the main menu.
-2. **Configuration Details:** Sign-ins go through browser AND mobile to ensure success.
-3. **Saved Accounts:** Generated accounts are saved into `gen/accounts.txt` when the generator stops.
-4. **Saved Sessions:** Generated sessions are saved into `gen/sessions.txt`.
-
-### Results:
-
-- Successful accounts and sessions are saved accordingly, ensuring organized and efficient account management.
 
 ## Mass DM
 
