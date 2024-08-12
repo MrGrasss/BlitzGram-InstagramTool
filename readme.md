@@ -1,4 +1,4 @@
-![Screenshot_1](https://github.com/user-attachments/assets/4f5b11c8-8aa9-4415-ac85-858ec11626c0)
+![Screenshot_1](https://github.com/user-attachments/assets/66dc4f87-d2b2-4a13-bf76-5f162a8aa1e9)
 
 ---
 
@@ -19,6 +19,13 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 - Account Generator
 - Client Checker
 - Equal Follower
+- Mass Post Commenter
+- Mass Comments Liker
+- Mass Post Liker
+- Mass Saves (post/reels)
+- Mass Shares (posts/reels/stories)
+- Mass views (posts/reels/stories)
+- Mass Feed Poster
 
 ## Future:
 
@@ -60,6 +67,10 @@ This is a licensed tool and can be purchased by contacting [MrGrassss](https://t
 - **Caution:**
     - When logging into a session, keep that account in accounts.txt in case you need to re-login (refresh the session);
       the tool can do so.
+  
+- **Safety**
+    -  When using sessions the tool will automatically re-login to these using the credentials of that session in 
+       accounts.txt when needed.
 
 ## Account Functionalities
 
@@ -182,6 +193,71 @@ ensuring that each account follows a unique set of users without any overlap.
 - You have a `usernames.txt` file of 500 usernames.
 - You want to use 10 accounts, each following 50 users.
 - Equal Follower will ensure each of the 10 accounts follows a unique set of 50 users.
+
+## Mass Commenter
+
+### Overview
+
+Automate commenting on Instagram posts using multiple accounts. The tool facilitates posting comments on a 
+specified Instagram post.
+
+### Prerequisites
+
+1. **Message Content:**
+   - Ensure the comment message is stored in `mass_commenter/message.txt`.
+
+2. **Post URL:**
+   - Provide the post URL in the format: `https://www.instagram.com/p/POST_ID/`.
+
+### Setup
+
+1. **Message Configuration:**
+   - Store the comment message in `mass_commenter/message.txt`.
+
+2. **Post URL Validation:**
+   - The tool will validate the post URL and fetch the required media information.
+
+### How to Use
+
+1. **Initialize the Mass Commenter:**
+   - Provide the list of Instagram accounts and specify the post URL.
+
+2. **Run the Mass Commenter:**
+   - Execute the tool to start posting comments on the specified post.
+
+### Results
+
+- **Successful Comments:** Successfully posted comments will be logged, and you will receive updates on 
+  the number of successful posts.
+
+
+## Mass Feed Poster
+
+### Overview
+
+ Automatically posts images or videos with a message to Instagram feeds using multiple client accounts.
+
+### Prerequisites
+
+1. **Message Content:**
+   - Ensure the post message is stored in `mass_feed_poster/message.txt`.
+
+2. **Message Content:**
+   - Ensure either images or videos are stored in `mass_feed_poster/images(videos)`
+
+### Setup
+
+1. **Message Configuration:**
+   - Store the comment message in `mass_feed_poster/message.txt`.
+
+2. **Media Configuration:**
+   -  Place images in the `mass_feed_poster/images` directory or videos in the `mass_feed_poster/videos` directory.
+
+### Results
+
+- **Successful Comments:** Successfully posted comments will be logged, and you will receive updates on 
+  the number of successful posts.
+
 
 ## Suggestions / Feedback
 
